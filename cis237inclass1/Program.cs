@@ -10,6 +10,8 @@ namespace cis237inclass1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Zapdaboop");
+            Console.WriteLine("I'M A SCAT MAN!");
         }
     }
 }
