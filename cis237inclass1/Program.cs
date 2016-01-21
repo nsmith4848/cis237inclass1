@@ -34,16 +34,13 @@ namespace cis237inclass1
             employees[1] = new Employee("Austin", "Powers", 100.33m);
             employees[2] = new Employee("Dustin", "Hoffman", 450.23m);
             employees[3] = new Employee("Crazy", "Eyes", 0.01m);
-            employees[4] = new Employee("Billy", "Madison", 0.50m);
-            employees[5] = new Employee("Billy", "Madison", 0.50m);
-            employees[6] = new Employee("Billy", "Madison", 0.50m);
-            employees[7] = new Employee("Billy", "Madison", 0.50m);
-            employees[8] = new Employee("Billy", "Madison", 0.50m);
-            employees[9] = new Employee("Billy", "Madison", 0.50m);
-
+            employees[4] = new Employee("Billy", "Madison", 0.50m);          
             foreach (Employee employee in employees)
             {
-                Console.WriteLine(employee.ToString());
+                if (employee != null)
+                {
+                    Console.WriteLine(employee.ToString());
+                }
             }
         }
 
