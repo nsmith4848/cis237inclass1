@@ -37,7 +37,7 @@ namespace cis237inclass1
         {
             return this.firstNameString + "  " + this.lastNameString;
         }
-
+        //Override of ToString method, allows a readable format of the data displayed in the console
         public override string ToString()
         {
             return this.firstNameString + " " + this.lastNameString + " " + this.weeklySalaryDecimal.ToString("C");
