@@ -42,6 +42,30 @@ namespace cis237inclass1
                     Console.WriteLine(employee.ToString());
                 }
             }
+
+            UserInterface ui = new UserInterface();
+
+            int choice = ui.GetUserInput();
+
+            while(choice != 2)
+            {
+                string allOutput = "";
+                if (choice == 1)
+                {                    
+
+                    foreach(Employee employee in employees)
+                    {
+                        if (employee != null)
+                        {
+                            allOutput += employee.ToString() + Environment.NewLine;
+                        }
+                    }
+                }
+
+                ui.PrintAllOutput(allOutput);
+                choice = 2;
+            }
+            choice = ui.GetUserInput();
         }
 
         static void changeAnInt(int myNumberInt)
